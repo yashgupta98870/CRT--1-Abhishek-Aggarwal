@@ -1,0 +1,180 @@
+// Problem 1 -- If condition 
+// to verify user's age wether eligible for vote or not ?
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    // if condition 
+    if(age >= 18) {
+        // logic 
+        cout << "Eligible For vote";
+    }
+    return 0;
+}
+
+
+
+
+
+// Problem 2 -- If - else condition 
+// to verify user's age wether eligible for vote or not ?
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+    cin >> age;
+    // if condition 
+    if(age >= 18) {
+        // logic 
+        cout << "Eligible For vote";
+    } else {
+        // logic 
+        cout << "Not Eligible For vote";
+    }
+    return 0;
+}
+
+
+
+//Problem 3 --nested loop
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age ;
+    cin>>age;
+    
+    if(age>=18){
+        if(age >=100) {
+             cout << " eligible for vote (but serniour citizen)";
+        }else{
+        cout << " eliglible for vote ";
+    }else{
+        if(age<0) {
+            cout << "enter a valid age number";
+        } else{
+            cout << "not eligible for vote";
+        }
+    }
+    return 0;
+}
+
+
+
+
+// Problem 4 ---- 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    int max_Number;
+    
+    cin >> a >> b;
+    // Ternary Operator
+    max_Number = (a > b) ? a : b;
+    
+    cout << max_Number;
+    return 0;
+}
+
+
+
+
+//Problem 5-----
+ #include <iostream>
+ using namespace std;
+
+ int main() {
+     int n;
+     cin >> n;
+    
+     for(int i = 1; i <= n; i++) {
+         if( i % 3 == 0){
+             continue;
+         }
+         cout << i << " ";
+     }
+     return 0;
+ }
+
+
+//Problem 6------
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int sum = 0;
+    
+    while(true) {
+       cin >> n;
+       
+       if(n < 0){
+           break;
+       }
+       sum = sum + n;
+    }
+    cout << sum;
+    return 0;
+}
+
+/Problem 7-------
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    string dayOrNight;
+    bool motionDetected;
+    
+    cout<< "is it Day or Night :";
+    cin>> dayOrNight;
+    cout<< "Is Motion decteced ? (1 for Yes , 0 For Nor) : ";
+    cin >> motionDetected;
+    
+    if(dayOrNight == "Night"|| dayOrNight == "night"){
+        if(motionDetected){
+            cout<< "Turn on LED Lights with 100% brightness....";
+        }else{
+            cout<<"Turn on the LED light with only 10% brightness.. ";
+        }
+    }else{
+        cout<< "Turn off the lights...";
+    }
+    return 0;
+}
+
+
+//Problem 8
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int choice ;
+    cin>>choice;
+    switch(choice){
+        case 1:
+        cout<< " Transferring call to the customer support....";
+        break;
+        case 2:
+        cout<< "Transferring call to billing and accoiunts....";
+        break;
+        case 3:
+        cout<<"Connecting to Technical help desk...";
+        break;
+        case 4:
+        cout<<"Connecting call to the agent...";
+        break;
+        default:
+        cout<<"Invalid selection , Enter a valid number...";
+    }
+    return 0;
+}
+
