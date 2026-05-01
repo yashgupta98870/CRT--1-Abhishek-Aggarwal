@@ -12,3 +12,61 @@ int main(){
     return 0;
     
 }
+
+
+// GLOBAL VS LOCAL VARIABLE
+
+#include<iostream>
+using namespace std;
+// global variable
+int globalVaribale = 100;
+int main(){
+    // local variable
+    int userInput;
+    float result;
+    
+    cin >> userInput;
+    result = (double)globalVaribale / userInput;
+    
+    cout << result << endl;
+    return 0;
+    
+}
+
+
+
+
+//program 7
+#include <iostream>
+using namespace std;
+
+int main() {
+    int userID, password;
+
+    int correctID = 1234;
+    int correctPassword = 0;
+
+    
+    cout << "Enter User ID: ";
+    cin >> userID;
+
+    cout << "Enter Password: ";
+    cin >> password;
+
+    
+    if (userID == correctID && password == correctPassword) {
+        cout << "Login Correct" << endl;
+    } else {
+        cout << "Login Incorrect" << endl;
+    }
+
+    return 0;
+}
+
+//program 8 
+#include <iostream>
+using namespace std ;
+ont main {
+      int main{
+system.out.println("hello world ") 
+if 
